@@ -1,0 +1,1293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>vCard - Personal Portfolio</title>
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img src="./assets/images/my-avatarr.png" alt="Muhammad Helmi Muharrom" width="80">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Muhammad Helmi Muharrom">Muhammad Helmi Muharrom</h1>
+
+          <p class="title">Products & Marketing Entusiast</p>
+          <p class="title">Graduate Google Project Management 
+            Proffesional Certifcate🎓</p>
+
+
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+
+              <a href="mailto:helmiimuharrom@gmail.com" class="contact-link">helmiimuharrom@gmail.com</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+            </div>
+
+
+           
+            <div class="contact-info">
+              <p class="contact-title">Phone</p>
+            
+            <a href="#" id="reveal-link">Click Me😆</a>
+            <a href="tel:+62858106141" class="contact-link" id="phone-link" style="display: none;">+62-858-1061-4182</a>
+            
+
+
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="calendar-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Birthday</p>
+
+              <time datetime="2002-03-17">March 17, 2002</time>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+
+              <address>Jakarta, ID </address>
+            </div>
+
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+
+          <li class="social-item">
+            <a href="https://www.linkedin.com/in/muhammad-helmi-muharrom/" class="social-link">
+              <img src="./assets/images/linkedin.svg"LinkedIn Icon>
+            </a>
+          </li>
+          
+
+          <li class="social-item">
+            <a href="https://medium.com/@hihelmi" class="social-link">
+              <ion-icon name="logo-Medium"></ion-icon>
+            </a>
+          </li>
+
+
+          
+          <li class="social-item">
+            <a href="https://www.tiktok.com/@namaakuhelmi" class="social-link">
+              <ion-icon name="logo-Tiktok"></ion-icon>
+            </a>
+          </li>
+
+
+          <li class="social-item">
+            <a href="https://www.instagram.com/hellmi.i/" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://github.com/HelmiMuharrom" class="social-link">
+              <ion-icon name="logo-Github"></ion-icon>
+            </a>
+          </li>
+          
+
+        </ul>
+
+      </div>
+
+    </aside>
+
+
+
+
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link  active" data-nav-link>About</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Resume</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Portfolio</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Blog</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Contact</button>
+          </li>
+
+        </ul>
+
+      </nav>
+
+
+
+
+
+      <!--
+        - #ABOUT
+      -->
+
+      <article class="about  active" data-page="about">
+
+        <header>
+          <h2 class="h2 article-title">About me</h2>
+        </header>
+
+        <section class="about-text">
+          <p>
+            Hi <img src="https://user-images.githubusercontent.com/18350557/176309783-0785949b-9127-417c-8b55-ab5a4333674e.gif" alt="GIF" width="35" height="35"> 
+            I'm Product & Marketing Growth  from Jakarta, Indonesia, working in Products B2B/B2C and Marketing.
+            I enjoy
+            turning complex problems into simple, beautiful and intuitive Seamless Procces.
+          </p>
+
+          <p>
+            My job is to build your products and Marketing so that it is functional and user-friendly but at the same time attractive.
+            Moreover, with my Proffesonal expereince I
+            add personal touch to your product and make sure that is eye-catching and ussability to use.  
+          </p>
+          <p>
+            My aim is to bring
+            across your products
+            message and identity in the most creative way. I working as Product & Marketing  for many famous Brand Companies & Several Industries.
+          </p>
+        </section>
+
+
+        <!--
+          - service
+        -->
+
+        <section class="service">
+
+          <h3 class="h3 service-title">What i can offer to you</h3>
+
+          <ul class="service-list">
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-design.svg
+                " alt="design icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Product Management</h4>
+
+                <p class="service-item-text">
+                  with empowering your product meets top-notch quality standards, surpassing industry norms and customer demands.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-Marketingg.svg" alt="Web development icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Marketing & Growth</h4>
+
+                <p class="service-item-text">
+                  Launch an Marketing Strategic Strategy that expand your bussines.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-project.svg" alt="mobile app icon" width="45">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Project Management</h4>
+
+                <p class="service-item-text">
+                  With unwavering focus and a commitment to prioritization, I ensure that every project is delivered on time.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-photo.svg" alt="camera icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Documentation</h4>
+
+                <p class="service-item-text">
+                  documentation is critical for bussines succes.And thats why we need that.
+                </p>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section>
+
+
+        <!--
+          - testimonials
+        -->
+
+        <section class="testimonials">
+
+          <h3 class="h3 testimonials-title">Testimonials</h3>
+
+          <ul class="testimonials-list has-scrollbar">
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Mathius</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Helmi is quick to react, expressive, and a quick learner; he manages the relationship division with others. He is specialized structure, particularly in the Project Realm, 
+                    and his energy gave both individuals and organizations authenticity.
+                    <br>
+                    <br>
+                    <em>"Mathius Worked with Muhammad Helmi on the same team"</em>
+                    <br>
+                    <em style="text-align: center;"><a href="https://www.linkedin.com/in/hihelmi/">See Full story</a></em>
+
+                  </p>
+                </div>
+
+              </div>
+            </li>
+          </ul>
+
+        </section>
+
+
+        <!--
+          - testimonials modal
+        -->
+
+        <div class="modal-container" data-modal-container>
+
+          <div class="overlay" data-overlay></div>
+
+          <section class="testimonials-modal">
+
+            <button class="modal-close-btn" data-modal-close-btn title="Close Modal">
+              <ion-icon name="close-outline"></ion-icon>
+              Close
+            </button>
+            
+            <div class="modal-img-wrapper">
+              <figure class="modal-avatar-box">
+                <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="80" data-modal-img>
+              </figure>
+
+              <img src="./assets/images/icon-quote.svg" alt="quote icon">
+            </div>
+
+            <div class="modal-content">
+
+              <h4 class="h3 modal-title" data-modal-title>Mathius</h4>
+
+              <time datetime="2022-08-3">3 August, 2022</time>
+
+              <div data-modal-text>
+                <p>
+                  Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                  lot of experience
+                  and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                  consectetur adipiscing
+                  elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                </p>
+              </div>
+
+            </div>
+
+          </section>
+
+        </div>
+
+
+        <!--
+          - clients
+        -->
+
+        <section class="clients">
+
+          <h3 class="h3 clients-title">Clients</h3>
+
+          <ul class="clients-list has-scrollbar">
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-1-color.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-2-color.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-3-color.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-4-color.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-5-color.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-6-color.png" alt="client logo">
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #RESUME
+      -->
+
+      <article class="resume" data-page="resume">
+
+        <header>
+          <h2 class="h2 article-title">Resume</h2>
+        </header>
+
+        <section class="timeline">
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="Resume"></ion-icon>
+              <img src="./assets/images/Resume-Experience.svg" alt="Web development icon" width="35">
+            </div>
+            <h3 class="h3">Experience</h3>
+          </div>
+          <ol class="timeline-list">
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Growth Marketing Intern</h4>
+              <h5 class="h4 timeline-item-title"><i>Kompas.id</i></h5>
+              <span>📍Jakarta,ID</span>
+              <span>📅May 2023- Recent</span>
+              <p class="timeline-text">
+                Kompas.com is one of the pioneers of online media in Indonesia, having first appeared on the Internet on September 14, 1995, under the name Kompas Online (KOL). Initially, Kompas Online focused on the subscribe free-premium feature.
+              </p>
+              <h8 class="h4 timeline-item-title">As a Growth Marketing intern at Kompas.id, my role and responsibilities are:</h5>
+              <p class="timeline-text">
+                - Successfully won applicants with participants with almost 5,500+ as a Growth Marketing intern
+              </p>
+              </p>
+              <p class="timeline-text">
+                - In charge for mobile subscription growth team.
+              </p>
+              <p class="timeline-text">
+                - Creating digital marketing campaigns for Kompas.id android app users.
+              </p>
+              <p class="timeline-text">
+                - Optimizing digital marketing campaigns in email marketing, push notification, WhatsApp blast, and Meta ads.
+              </p>
+              <p class="timeline-text">
+                - Optimizing digital marketing campaigns using moengage, stripo, metabase, mailchimp, and meta ads.
+              </p>
+                <p class="timeline-text">             
+                - Creating ad creative concepts and working together with graphic designer & copywriter.
+              </p>
+
+              <p class="timeline-text">             
+                Skills: Marketing · Growth Strategies · Product Development · Sales & Marketing · Project Management ·Data Insight · Documentation
+                <p class="timeline-text">             
+                  <p class="timeline-text">
+                    Tools Used:
+                    <span class="tool-icon"><ion-icon name="document-text-outline"></ion-icon></span>
+                    <span class="tool-icon"><ion-icon name="mail-outline"></ion-icon></span>
+                  </p>
+                  </p>
+                  <a href="https://drive.google.com/file/d/1j9xaBZfOSEjVR_blmkLYOicZ9y-Ffhb1/view" target="_view">
+                    <button id="loadMoreButton">Click Here to see all my experience</button>
+                  </a>
+                  
+  
+            <li class="timeline-item hidden">
+              <h4 class="h4 timeline-item-title">Teaching Assistant Project Management</h4>
+              <h5 class="h4 timeline-item-title"><i>Pacmann.io</i></h5>
+              <span>📍Jakarta,ID</span>
+              <span>📅May 2023- Recent</span>
+              <p class="timeline-text">
+                Pacmann Academy is an e-learning platform that focuses on providing quality learning with in-depth curriculums at an affordable price. We also advocate for critical thinking, systematic problem-solving, and decision-making based on data and facts. Currently, Pacmann offers three classes: School of Data, School of Engineering, and School of Business.
+
+              </p>
+              <h8 class="h4 timeline-item-title">As a Teaching Assistant - Project Management Class Intern, my responsibilities and achievements include:
+
+                :</h5>
+              <p class="timeline-text">
+                - Assisting 15 class sessions including live Class and Corporate Class and leading 100+ students of Project Management Bootcamp               </p>
+              </p>
+              <p class="timeline-text">
+                - Creating papers to help both internal and external teams and users.</p>
+              <p class="timeline-text">
+                - Examining, analyzing, and creating product specifications for classes
+
+              <p class="timeline-text">
+                - Regularly compile, process, and analyze student attendance and feedback data
+              </p>
+              <p class="timeline-text">
+                - Contact tutors and other Pacmann stakeholders for class inquiries
+              </p>
+                <p class="timeline-text">             
+                - Become the facilitator of every class session
+                </p>
+              <p class="timeline-text">             
+                Skills: Project Management · Communication Strategies · Teachhing Assistant  
+            </li>
+            <li class="timeline-item hidden">
+              <h4 class="h4 timeline-item-title">Product Development Intern</h4>
+              <h5 class="h4 timeline-item-title"><i>Finplan.id</i></h5>
+              <span>📍Jakarta,ID</span>
+              <span>📅November 2022 - May 2023</span>
+              <p class="timeline-text">
+                finplan is a medium with a cohort to establish #temaninvestasimu by assisting individuals in achieving their individual’s ability  through investment goals.
+                 Media including E-learning,blog as well Resourcefull content
+              </p>
+              <h8 class="h4 timeline-item-title">As Product Development, my responsibilities include:</h5>
+              <h6 class="h5 timeline-item-title">Q1:</h5>
+
+              <p class="timeline-text">
+                - winner applicant with participant with almost 800++ as a product development intern’s</p>
+              </p>
+              <p class="timeline-text">
+                - Suggesting product enhancements to improve user experience and workflow.</p>
+              <p class="timeline-text">
+                - Creating and establishing improvement activity Product Teams (including UI/Developer) 
+                to implement Kanban / Scrum with Maneras the Product Manager.</p>
+              <p class="timeline-text">
+                - Worked closely with cross-functional teams to ensure project timelines and deliverables were met.</p>
+              <p class="timeline-text">
+                - Developed and maintained project plans, timelines, and status reports to ensure project progress was tracked effectively.</p>
+                <p class="timeline-text">             
+                - Conducted post-project evaluations to identify areas for improvement and implemented process improvements for future projects.</p>
+                  <h6 class="h5 timeline-item-title">Q2:</h5>
+
+                    <p class="timeline-text">
+                      - Accomplished 496% increase in new website visitors within 30 days as measured by Google Analytics, by conducting research and 
+                      collaborating with other departments to improve user experience and drive traffic.</p>
+                    <p class="timeline-text">
+                      - Achieved an 8% improvement in customer satisfaction as measured by user feedback surveys, by conducting usability testing in collaboration with the Project Manager and UI/UX team to 
+                        identify and address user pain points. </p>
+                    <p class="timeline-text">
+                      - Successfully supported process improvement efforts by providing comprehensive documentation on usability testing procedures and best practices, 
+                        resulting in a 12% increase in efficiency and a 10% improvement in user satisfaction scores. </p>
+                    <p class="timeline-text">
+                     - Conducted product research by leading the creation of surveys and analyzing customer feedback, resulting in a 5% increase in customer conversion and retention rates.</p>
+              <p class="timeline-text">             
+                Skills: Marketing · Growth Strategies · Product Development · Sales & Marketing · Project Management ·Data Insight · Documentation
+            </li>
+            
+            <li class="timeline-item hidden">
+              <h4 class="h4 timeline-item-title">Product Manager Intern</h4>
+              <h5 class="h4 timeline-item-title"><i>Embreo PTE Ltd</i></h5>
+              <span>📍Singapore</span>
+              <span>📅May 2022 - August 2023</span>
+              <p class="timeline-text">
+                Embreo is a Agency Bussines Model wherethe  concept incubator that focuses on developing digital concepts from conception to deployment.</p>
+              <h8 class="h4 timeline-item-title">As Product Development, my responsibilities include:</h5>
+              <p class="timeline-text">
+                -  Oversaw the delivery of multiple projects, including ERP implementation, mobile app development, and website design, ensuring high-quality work and client satisfaction.
+              </p>
+              </p>
+              <p class="timeline-text">
+                - Managing across several development teams and projects to assist Product Manager's daily tasks.               .</p>
+              <p class="timeline-text">
+                - Examining, analyzing, and creating product specifications.
+              </p>
+              <p class="timeline-text">
+                - Examining, analyzing, and creating product specifications.
+                .</p>
+              <p class="timeline-text">
+                - Suggesting product enhancements to improve user experience and workflow.
+                .</p>
+                <p class="timeline-text">             
+                 - Conducting quality assurance testing on items to ensure they fulfill specifications and assist the QA team.</p>
+                 <p class="timeline-text">             
+                  - being appointed as a project manager at project internals includes determining project objectives with stakeholder management and managing 5+individuals, including developers, UI/UX designers, and testers.
+                  <p class="timeline-text">             
+                    - Coordinate weekly meeting’s with Project Manager and CEO”s to estabilsh project update’s feature, improvement and quality of management
+                    <p class="timeline-text">             
+                      Skills: Marketing · Growth Strategies · Product Development · Sales & Marketing · Project Management ·Data Insight · Documentation
+     
+        
+          </ol>
+        </section>
+        
+        </section>
+        
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Education</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">University Pelita Bangsa</h4>
+
+              <span>📅 2020 — Present</span>
+              <span>🎓 Bachelor Management Degree</span>
+              <h5 class="h4 timeline-item-title">Volunteer Experience</h5>
+              <h6 class="h4 timeline-item-title">Marketing Division at Kuliah Studi Pasar Modal (KSPM), (2022 – Present)</h6>
+              <p class="timeline-text">
+                - Led webinars that assist over 70 participants as well as co-ordinate with the head chair to enhance campaigns
+                    and negotiation activities.
+              </p>
+              <p class="timeline-text">
+            - Carried out Fundamental Analysis whilst taking into account various factors,such as company performance,
+              business competition analysis, industry analysis, economic analysis, and macro-micro markets
+            </p>
+            <h6 class="h4 timeline-item-title">Head of Division at Kelompok Studi Human Resource (KSHR)- 2022-2023</h6>
+            <p class="timeline-text">
+              -  Ensured 100% participation of members in events to enhance individuals’ abilities.
+            </p>
+            <p class="timeline-text">
+            -  Being condacted as a project manager as a webinar with assist over 50 participants
+          </p>
+          <h6 class="h4 timeline-item-title">Taniten.id-Projec Manager (2022-2022)</h6>
+
+          <p class="timeline-text">
+            -  brainstorming and implementation to purposely focused creating segmentation
+          </p>
+          <p class="timeline-text">
+            -  Defining and elaboration Games with team mates for Bootcamps Program Activity
+          </p>
+          <p class="timeline-text">
+            -  Supporting and Analyzing bootcamps Program by reducing 14% to achive goals and purposes
+          </p>
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">SMK BINA NASIONAL INFORMATIKA</h4>
+
+              <span>2017 — 2020</span>
+
+              <p class="timeline-text">
+                -  Won 1St test TOEFL in the High School Programme, Score: 470
+              </p>
+              
+
+            </li>
+
+          
+          </section>
+
+          <section class="timeline">
+  
+            <div class="title-wrapper">
+              <div class="icon-box">
+                <ion-icon name="book-outline"></ion-icon>
+              </div>
+  
+              <h3 class="h3">Certification</h3>
+            </div>
+  
+            <ol class="timeline-list">
+  
+              <li class="timeline-item">
+  
+                <h4 class="h4 timeline-item-title">Google Project Management: Professional Certificate</h4>
+
+                <span>2022</span>
+                <span>Coursera.com</span>
+                <span>Certificate: <a href="https://www.credly.com/badges/9df07b15-2440-40e8-be72-211625f1b59f?source=linked_in_profile"><em>Click Here</em></a></span>
+  
+                <p class="timeline-text">
+                  ➢ Topics Include: Applying Project Management in the Real World, Foundations of Project Management, Project
+                    Planning, Project Execution, Agile Project Management, 
+                  Applying Project Management in the RealWorld
+                </p>
+  
+              </li>
+  
+             <li class="timeline-item">
+  
+                <h4 class="h4 timeline-item-title">Digital Product Management Specialization</h4>
+
+                <span>2022</span>
+                <span>Coursera.com</span>
+                <span>Certificate: <a href="https://www.coursera.org/account/accomplishments/specialization/certificate/GQVGNXZGBQNZ"><em>Click Here</em></a></span>
+                <p class="timeline-text">
+               ➢ Topics Include: Digital Product Management: Modern Fundamentals, Agile Meets Design Thinking, Hypothesis-
+                  Driven Development, Agile Analytics, Managing an Agile Team
+                </p>
+  
+              </li>
+  
+              <li class="timeline-item">
+  
+                <h4 class="h4 timeline-item-title">Verified Certificate for Successful Negotiation: Essential Strategies and Skills, edX</h4>
+  
+                <span>2022</span>
+                <span>Certificate: <a href="https://courses.edx.org/certificates/620925642b824285a7a182f7e109b6ae"><em>Click Here</em></a></span>
+
+  
+                <p class="timeline-text">
+                ➢ Topics Include: Prepare: Plan Your Negotiation Strategy, Negotiate: Use Key Tactics for Success, Close: Create a
+                  Contract, Perform and Evaluate: The End Game
+                </p>
+                <a href="https://www.linkedin.com/in/muhammad-helmi-muharrom" target="_new">
+                  <button id="loadMoreButton">Click Here to see all my experience</button>
+                </a>
+              </li>
+  
+
+          </ol>
+
+        </section>
+
+        <section class="skill">
+
+          <h3 class="h3 skills-title">My skills</h3>
+
+          <ul class="skills-list content-card">
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Product Development</h5>
+                <data value="80">80%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 80%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Social Media Enterprise</h5>
+                <data value="70">70%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 70%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Growth improvement</h5>
+                <data value="90">85%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 85%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Project Development & Documentation</h5>
+                <data value="50">60%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 50%;"></div>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+<!--
+        - #PORTFOLIO
+      -->
+
+      <article class="portfolio" data-page="portfolio">
+
+        <header>
+          <h2 class="h2 article-title">Portfolio</h2>
+        </header>
+
+        <section class="projects">
+
+          <ul class="filter-list">
+
+            <li class="filter-item">
+              <button class="active" data-filter-btn>All</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Product Manager</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Growth & Social Media</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Personal Website</button>
+            </li>
+
+          </ul>
+
+          <div class="filter-select-box">
+
+            <button class="filter-select" data-select>
+
+              <div class="select-value" data-selecct-value>Select category</div>
+
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+
+            </button>
+
+            <ul class="select-list">
+
+              <li class="select-item">
+                <button data-select-item>All</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Product Manager</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Growth & Social Media</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Personal Website</button>
+              </li>
+
+            </ul>
+
+          </div>
+
+          <ul class="project-list">
+
+            <li class="project-item  active" data-filter-item data-category="product manager">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-1.jpg" alt="prodict manaager" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">CARA APPS</h3>
+                
+
+                <p class="project-category">Product Manager Study Case</p>
+
+              </a>
+            </li>
+          
+            
+            <li class="project-item  active" data-filter-item data-category="product manager">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-1.jpg" alt="prodict manaager" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Finplan.id- Case Study</h3>
+
+                <p class="project-category">Product Manager Study Case</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="product manager">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-1.jpg" alt="prodict manaager" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">EMBREO WEBSITE</h3>
+
+                <p class="project-category">Improved the Website for Better Proffsionality</p>
+
+              </a>
+            </li>
+          
+            <li class="project-item  active" data-filter-item data-category="growth & social media">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/icon-Marketingg.svg" alt="growth & social media" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">How I —Created 1000+ New Visitor At finplan.id 🥳🎉</h3>
+
+                <p class="project-category">Growth Study Case</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="personal website">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-3.jpg" alt="Fundo" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Fundo</h3>
+
+
+                <p class="project-category">Personal Website</p>
+
+              </a>
+            </li>
+          
+
+                <h3 class="project-title"><li class="project-item  active" data-filter-item data-category="personal website">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-3.jpg" alt="Fundo" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Internships - My Current Activity </h3>
+
+
+                <p class="project-category">Personal Website</p>
+
+              </a>
+            </li>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #BLOG
+      -->
+
+      <article class="blog" data-page="blog">
+
+        <header>
+          <h2 class="h2 article-title">Blog</h2>
+        </header>
+
+        <section class="blog-posts">
+
+          <ul class="blog-posts-list">
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-1.jpg" alt="Design conferences in 2022" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Design conferences in 2022</h3>
+
+                  <p class="blog-text">
+                    Veritatis et quasi architecto beatae vitae dicta sunt, explicabo.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-2.jpg" alt="Best fonts every designer" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Best fonts every designer</h3>
+
+                  <p class="blog-text">
+                    Sed ut perspiciatis, nam libero tempore, cum soluta nobis est eligendi.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-3.jpg" alt="Design digest #80" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Design digest #80</h3>
+
+                  <p class="blog-text">
+                    Excepteur sint occaecat cupidatat no proident, quis nostrum exercitationem ullam corporis suscipit.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-4.jpg" alt="UI interactions of the week" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">UI interactions of the week</h3>
+
+                  <p class="blog-text">
+                    Enim ad minim veniam, consectetur adipiscing elit, quis nostrud exercitation ullamco laboris nisi.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-5.jpg" alt="The forgotten art of spacing" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">The forgotten art of spacing</h3>
+
+                  <p class="blog-text">
+                    Maxime placeat, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="/design-digest">
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-6.jpg" alt="Design digest #79" loading="lazy">
+                </figure>
+            
+                <div class="blog-content">
+                  <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+                    <span class="dot"></span>
+                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                  </div>
+                  <h3 class="h3 blog-item-title">Design digest #79</h3>
+                  <p class="blog-text">
+                    Optio cumque nihil impedit uo minus quod maxime placeat, velit esse cillum.
+                  </p>
+                </div>
+              </a>
+            </li>
+            
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #CONTACT
+      -->
+
+      <article class="contact" data-page="contact">
+
+        <header>
+          <h2 class="h2 article-title">Contact</h2>
+        </header>
+
+        <section class="mapbox" data-mapbox>
+          <figure>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d199666.5651251294!2d-121.58334177520186!3d38.56165006739519!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x809ac672b28397f9%3A0x921f6aaa74197fdb!2sSacramento%2C%20CA%2C%20USA!5e0!3m2!1sen!2sbd!4v1647608789441!5m2!1sen!2sbd"
+              width="400" height="300" loading="lazy"></iframe>
+          </figure>
+        </section>
+
+        <section class="contact-form">
+
+          <h3 class="h3 form-title">Contact Form</h3>
+
+          <form action="#" class="form" data-form>
+
+            <div class="input-wrapper">
+              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
+
+              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
+            </div>
+
+            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+
+            <button class="form-btn" type="submit" disabled data-form-btn>
+              <ion-icon name="paper-plane"></ion-icon>
+              <span>Send Message</span>
+            </button>
+
+          </form>
+
+        </section>
+
+      </article>
+
+    </div>
+
+  </main>
+
+
+
+
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
